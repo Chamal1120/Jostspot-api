@@ -1,0 +1,22 @@
+#You can use the VSCode extension REST Client by Huachao Mao to test the API requests using this file.
+
+###
+
+GET http://localhost:3001/jots
+
+###
+
+POST http://localhost:3001/jots/new
+Content-Type: application/json
+
+{
+    "text": "Example Jot(aka Note 😁)"
+}
+
+###
+
+DELETE http://localhost:3001/jots/delete/<specify an id>
+
+###
+
+PUT http://localhost:3001/jots/complete/<specify an id>
