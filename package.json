@@ -1,7 +1,7 @@
 {
   "name": "jotspot-api",
   "version": "1.0.0",
-  "description": "mern-notes-api",
+  "description": "jotspot-app-api",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
