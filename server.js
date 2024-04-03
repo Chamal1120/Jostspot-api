@@ -10,8 +10,12 @@ const PORT = process.env.PORT || 3001;
 // Express middleware
 app.use(express.json());
 
-// Enable CORS || Replace with your front-end's URL
-app.use(cors({ origin: ["https://jotspot.vercel.app/"] }));
+// Enable CORS || Replace with your front-end's URL or keep the * to allow all URLs
+app.use(
+	cors({
+		origin: "*",
+	})
+);
 
 // MongoDB URI environment variable
 const mongoURI = process.env.MONGO_URI;
